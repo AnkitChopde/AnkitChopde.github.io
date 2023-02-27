@@ -11,3 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#about{
+  font-size:1rem;
+}
+
+#contact{
+  font-size:1rem;
+}
+
+#profile{
+  font-size:1rem;
+}
+
+#projects{
+  font-size:1rem;
+}
+
+#skills{
+  font-size:1rem;
+}
