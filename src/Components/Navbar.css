@@ -28,13 +28,13 @@ nav{
     transition: 0.4s ease-in-out;
 }
 #nav-menu li:hover{
-    color:#17cf97;   
+    color:#E11D48;   
 }
 #nav-menu li:hover::after{
     content:"";
     width:30%;
     height:2px;
-    background:#17cf97;
+    background:#E11D48;
     position:absolute;
     bottom:-4px;
     left:20px;

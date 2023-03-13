@@ -2,6 +2,7 @@ import { Box, Flex, Heading } from '@chakra-ui/react'
 import React from 'react'
 import GitHubCalendar from 'react-github-calendar'
 import ReactTooltip from "react-tooltip";
+import "../App.css"
 const Stats = () => {
   return (
     <Box
@@ -9,9 +10,7 @@ const Stats = () => {
         bg= "#152242"
         h={{base:"440px",md:"600px",lg:"695px"}}
     >
-      <Heading _hover={{textDecoration:"underline"}} mb="20px" color="#17cf97">
-        Github Stats
-      </Heading>
+      <Heading className="heading">Github Stats</Heading>
 
       <GitHubCalendar
         username="AnkitChopde"

@@ -33,18 +33,18 @@ const Navbar = () => {
                 </li></AnchorLink>
                 
                 
-                <li>
+                <li onClick={()=>setClicked(clicked)}>
                 <AnchorLink offset={"70px"}  href="#about">About</AnchorLink>
-                </li>
-                <li>
+                </li >
+                <li onClick={()=>setClicked(clicked)}>
                 <AnchorLink offset={"70px"} href="#skills">Skills</AnchorLink>
                 </li>
                 
-                <li>
+                <li onClick={()=>setClicked(clicked)}>
                 <AnchorLink offset={"70px"}  href="#projects">Projects</AnchorLink>
                 </li>
                 
-                <li>
+                <li onClick={()=>setClicked(clicked)}>
                 <AnchorLink offset={"70px"}  href="#contact">Contact</AnchorLink>
                 </li>
                 

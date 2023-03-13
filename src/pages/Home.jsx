@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
+import ProjectCard from '../Components/ProjectCard'
 import About from './About'
 import Contact from './Contact'
 import ProfileSection from './ProfileSection'
@@ -16,6 +17,8 @@ const Home = () => {
       <Projects/>
       <Stats/>
       <Contact/>
+      {/* <Projects/> */}
+      {/* <Contact/> */}
     </div>
   )
 }

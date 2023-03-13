@@ -1,0 +1,42 @@
+.card{
+    width:400px;
+    height:500px;
+    border:2px solid #E11D48;
+    padding:20px;
+    border-radius:10px
+}
+.text{
+    text-align:center;
+    color:#E11D48;
+    font-size:18px;
+    margin-top:15px;
+    font-weight:bold;
+}
+.para{
+    text-align:left;
+    color:#DBD9D9;
+    font-size:16px;
+    margin-top:15px;
+    line-height:25px;
+}
+
+.stackText{
+    text-align:left;
+    color:#E11D48;
+    font-size:16px;
+}
+.techStacks{
+    text-align:left;
+    color:#DBD9D9;
+    font-size:16px;
+    font-weight:bold;
+    width:70%;
+}
+.icons{
+    border-radius:50%;
+    border:1px solid red;
+}
+
+
+
+
