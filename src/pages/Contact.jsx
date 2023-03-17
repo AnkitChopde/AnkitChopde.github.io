@@ -117,10 +117,12 @@ const Contact = () => {
                           </FormControl>
                           <FormControl id="name" float="right">
                             <Button
-                              variant="solid"
-                              bg="#0D74FF"
-                              color="white"
-                              _hover={{}}>
+                              variant="ghost"
+                              color="blackAlpha.800"
+                          border="2px solid #E11D48"
+                          _hover={{ borderRadius:"30px",color:"#ffffff",bg: "#E11D48", border: "2px solid white" }}
+ 
+                            >
                               Send Message
                             </Button>
                           </FormControl>

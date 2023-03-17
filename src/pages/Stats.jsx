@@ -25,7 +25,7 @@ const Stats = () => {
         <Flex justifyContent={"space-between"}>
           <p style={{}}>
             &nbsp;
-            <img style={{borderRadius: "15px 50px 30px 5px", border: "3px solid #17cf97" }}
+            <img style={{borderRadius: "15px 50px 30px 5px", border: "3px solid #E11D48" }}
               align="center"
               src="https://github-readme-stats.vercel.app/api?username=ankitchopde&show_icons=true&theme=highcontrast&title_color=17cf97&text_color=ffffff&bg_color=152242&hide_border=true&locale=en"
               alt="ankitchopde"
@@ -33,7 +33,7 @@ const Stats = () => {
           </p>
 
           <p style={{ marginTop: "24px" }}>
-            <img  style={{borderRadius: "30px 5px 15px 50px", border: "3px solid #17cf97" }}
+            <img  style={{borderRadius: "30px 5px 15px 50px", border: "3px solid #E11D48" }}
               align="center"
               src="https://streak-stats.demolab.com?user=AnkitChopde&theme=vue-dark&hide_border=true&mode=weekly"
               alt="ankitchopde"
@@ -44,7 +44,7 @@ const Stats = () => {
         <Box margin="auto" h="130px" w="max-content" mt="20px">
           <p>
             <img
-              style={{borderRadius: "30px 30px 15px 5px", border: "3px solid #17cf97" }}
+              style={{borderRadius: "30px 30px 15px 5px", border: "3px solid #E11D48" }}
               align="left"
               src="https://github-readme-stats.vercel.app/api/top-langs?username=ankitchopde&show_icons=true&theme=highcontrast&title_color=17cf97&text_color=ffffff&bg_color=152242&hide_border=true&locale=en&layout=compact"
               alt="ankitchopde"

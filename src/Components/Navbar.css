@@ -10,6 +10,9 @@ nav{
     top:0;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
+#nav-menu button:hover{
+
+}
 #nav-menu{
     display:flex;
     justify-content:center;
@@ -27,6 +30,11 @@ nav{
     font-weight:600;
     transition: 0.4s ease-in-out;
 }
+.resume:hover::after{
+    content:"";
+    position:absolute;
+}
+
 #nav-menu li:hover{
     color:#E11D48;   
 }

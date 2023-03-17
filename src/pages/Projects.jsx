@@ -10,7 +10,6 @@ const Projects = () => {
               
               gap={7}
              >
-          
                   <ProjectCard/>
                   <ProjectCard/>
                   <ProjectCard/>

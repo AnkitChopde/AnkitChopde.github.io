@@ -5,17 +5,18 @@ const SkillCard = ({img,name}) => {
   return (
     <>
      <Box 
+     className="skills-card"
   w={{base:"120px",md:"120px",lg:"140px"}}
   h={{base:"120px",md:"120px",lg:"140px"}}
   borderRadius="15px 50px 30px"
-  border="3px solid #17cf97"
+  border="3px solid #E11D48"
   pt="3"
   transition= "width 0.5s, height 0.5s"
   _hover={{width:"145px",height:"145px"}}
  >
-    <Image margin="auto" w={{base:"60px",md:"70px",lg:"80px"}} src={img}/>
+    <Image className="skills-card-img" fill="#1970F1" margin="auto" w={{base:"60px",md:"70px",lg:"80px"}} src={img}/>
     
-    <Text  color="white" fontWeight="extrabold" >{name}</Text>
+    <Text className="skills-card-name"  color="#17cf97" fontWeight="extrabold" >{name}</Text>
      </Box>
     
     </>

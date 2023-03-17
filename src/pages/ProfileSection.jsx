@@ -1,16 +1,113 @@
-import { Box, Image } from '@chakra-ui/react'
+
 import React from 'react'
 import logo from "../Images/pic.png"
-const ProfileSection = () => {
-  return (
-    <div style={{display:"flex",backgroundColor:"#152242",gap:"20px",border:"1px solid red",height:"650px"}} id="profile">
-      <Box border="1px solid pink" w="50%"></Box>
-      <Box transition="0.3s ease-in-out"  border="1px solid pink" w="50%" >
-      <Image transition= "width 0.5s, height 0.5s" _hover={{w:"500px",h:"500px"}}
-  margin="auto" mt="15%" border="10px solid #17cf97" borderRadius="50%"  src={logo} alt="image" ></Image>
-      </Box>
-    </div>
-  )
-}
+import {
+  Container,
+  Stack,
+  Flex,
+  Box,
+  Heading,
+  Text,
+  Button,
+  Image,
+  Icon,
+  IconButton,
+  createIcon,
+  IconProps,
+  useColorModeValue,
+  Link,
+} from '@chakra-ui/react';
+import AnchorLink from "react-anchor-link-smooth-scroll";
+import myResume from "../Assets/Ankesh_Chopde_Resume.pdf"
 
+const ProfileSection = () => {
+
+  const handleResume = ()=>{
+    window.open("https://drive.google.com/drive/folders/1f2N7wYDLp7B07AJr4Krq6BemAJK0rpAA")
+  }
+
+  return (
+       <div style={{backgroundColor:"#152242"}}>
+         <Container maxW={'7xl'}>
+          <Stack
+            
+            pl={{lg:"10"}}
+            spacing={{ base: 4, md: 6 }}
+            py={{ base: 16, md: 24 }}
+            textAlign={{base:"center",md:"center",lg:"left"}}
+            direction={{ base: 'column', md: 'row' }}>
+            <Stack border="1px solid red" mt={{lg:"7"}} flex={1}  spacing={{ base: 5, md: 10 }}>
+              <Heading
+                lineHeight={1.4}
+                fontWeight={600}
+                fontSize={{ base: 'xl', sm: '2xl', lg: '3xl' }}>
+                <Text
+                  as={'span'}
+                  color="#ffffff"
+                  >
+                  Hi, I am Ankesh Chopde
+                </Text>
+                <br />
+                <Text as={'span'} fontSize={{ base: '2xl', sm: '3xl', lg: '4xl' }} color={'red.400'}>
+                 Full Stack Web Developer
+                </Text>
+              </Heading>
+              <Text color={'gray.500'} fontSize="lg">
+              An enthusiastic web developer with strong technical as well as interpersonal skills and expertise in MERN stack.
+              </Text>
+              <Stack spacing={6} direction={'row'}  >
+          <Link _hover={{textDecoration:"none"}} href={myResume} onClick={handleResume} download='Ankesh_Chopde_Resume.pdf'>
+          <Button
+            rounded={'full'}
+            px={6}
+           bg="#152242"
+           color="#ffffff"
+           border="2px solid #E11D48"
+            _hover={{ bg: '#E11D48',border:"2px solid white" }}>
+            Resume
+          </Button>
+          </Link>
+
+          
+          <Button rounded={'full'}  bg="#152242"
+           color="#ffffff"
+           border="2px solid #E11D48"
+            _hover={{ bg: '#E11D48',border:"2px solid white" }} px={6}>
+            <AnchorLink offset={"40px"}  href="#contact">Hire me</AnchorLink>
+          </Button>
+        </Stack>
+            </Stack>
+            
+            <Flex
+              flex={1}
+              justify={'center'}
+              align={'center'}
+             
+              w={'full'}>
+              <Box
+                
+                height={'300px'}
+                rounded={'2xl'}
+               
+                width={'max-content'}
+               >
+                <Image
+                  alt={'Hero Image'}
+                  
+                  align={'center'}
+                  borderRadius="50%"
+                  border="5px solid #E11D48"
+                  w={'100%'}
+                  h={'100%'}
+                  src={
+                    logo
+                  }
+                />
+              </Box>
+            </Flex>
+          </Stack>
+        </Container>
+       </div>
+      );
+    }
 export default ProfileSection

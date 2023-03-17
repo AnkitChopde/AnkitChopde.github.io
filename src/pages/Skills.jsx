@@ -1,6 +1,6 @@
 import React from "react";
 import SkillCard from "../Components/SkillCard";
-import { Box, Heading, SimpleGrid } from "@chakra-ui/react";
+import { Box, Flex, Heading, SimpleGrid } from "@chakra-ui/react";
 import styles from "./Skills.module.css"
 import {SiMongodb} from "react-icons/si"
 import html from "../Images/html.png"
@@ -12,7 +12,9 @@ const Skills = () => {
       <Box   p="30px" w={{base:"90%",md:"95%",lg:"75%"}} margin="auto" >
         <Heading className={styles.Heading}>Technical Skills</Heading>
         <Box margin="auto">
-        <SimpleGrid  mt="10" columns={[2,3,4,6]}  gridRowGap={{base:"5",md:"3",lg:"5"}}  gridColumnGap={{base:"8",md:"-10px",lg:"10"}} transition="0.3 ease-in-out" >
+        <Flex mt="10" flexWrap={"wrap"} justifyContent="center"
+              
+              gap={7}>
           <SkillCard img={html} name="HTML" />
           <SkillCard img={css} name="CSS"/>
           <SkillCard img="https://chiranjeev-thapliyal.vercel.app/svg/javascript.svg" name="JavaScript" />
@@ -26,7 +28,7 @@ const Skills = () => {
           <SkillCard img="https://rahul-rajeevan-portfolio.netlify.app/static/media/chakraui.15320604467d004df871.png" name="ChakraUI" />
           <SkillCard img="https://cdn.svgporn.com/logos/github-icon.svg" name="Github" />
     
-        </SimpleGrid>
+        </Flex>
         </Box>
       </Box>
     </div>

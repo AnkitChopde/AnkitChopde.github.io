@@ -1,4 +1,4 @@
-import { Avatar, Center,Icon, Heading, HStack, Image, Text, Box } from '@chakra-ui/react'
+import { Avatar, Center,Icon, Heading, HStack, Image, Text, Box, Link } from '@chakra-ui/react'
 import React from 'react'
 import styles from "../CSS_Files/ProjectCard.module.css"
 import Pro1 from "../Images/Objectopedia.png"
@@ -23,8 +23,8 @@ const ProjectCard = () => {
        </HStack>
        <Center>
        <HStack mt="7" spacing='5.5rem' >
-      <Avatar>{<FaRegEye/>}</Avatar>
-      <Box>{<BsGithub/>}</Box>
+        <Link></Link>
+        <Link></Link>
        </HStack>
 
        </Center>
