@@ -13,6 +13,7 @@ const Stats = () => {
       <Heading className="heading">Github Stats</Heading>
 
       <GitHubCalendar
+      className="react-activity-calendar"
         username="AnkitChopde"
         blockMargin={6}
         blockSize={15}
@@ -26,14 +27,14 @@ const Stats = () => {
           <p style={{}}>
             &nbsp;
             <img style={{borderRadius: "15px 50px 30px 5px", border: "3px solid #E11D48" }}
-              align="center"
+              align="center" id="github-stats-card"
               src="https://github-readme-stats.vercel.app/api?username=ankitchopde&show_icons=true&theme=highcontrast&title_color=17cf97&text_color=ffffff&bg_color=152242&hide_border=true&locale=en"
               alt="ankitchopde"
             />
           </p>
 
           <p style={{ marginTop: "24px" }}>
-            <img  style={{borderRadius: "30px 5px 15px 50px", border: "3px solid #E11D48" }}
+            <img id="github-streak-stats" style={{borderRadius: "30px 5px 15px 50px", border: "3px solid #E11D48" }}
               align="center"
               src="https://streak-stats.demolab.com?user=AnkitChopde&theme=vue-dark&hide_border=true&mode=weekly"
               alt="ankitchopde"
@@ -45,7 +46,7 @@ const Stats = () => {
           <p>
             <img
               style={{borderRadius: "30px 30px 15px 5px", border: "3px solid #E11D48" }}
-              align="left"
+              align="left" id="github-top-langs"
               src="https://github-readme-stats.vercel.app/api/top-langs?username=ankitchopde&show_icons=true&theme=highcontrast&title_color=17cf97&text_color=ffffff&bg_color=152242&hide_border=true&locale=en&layout=compact"
               alt="ankitchopde"
             />

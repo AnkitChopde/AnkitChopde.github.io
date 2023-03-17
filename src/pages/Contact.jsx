@@ -47,7 +47,7 @@ const Contact = () => {
                     <Box>
                       <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
                         <VStack pl={{base:"7",md:"2",lg:"0"}} spacing={3} alignItems="flex-start">
-                          <Button
+                          <Button id="contact-phone"
                             size="md"
                             height="48px"
                             width="200px"
@@ -57,7 +57,7 @@ const Contact = () => {
                             leftIcon={<MdPhone color="#1970F1" size="20px" />}>
                             +91-7709731109
                           </Button>
-                          <Button
+                          <Button id="contact-email"
                             size="md"
                             height="48px"
                             width="220px"

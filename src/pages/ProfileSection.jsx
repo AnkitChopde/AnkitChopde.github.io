@@ -42,6 +42,7 @@ const ProfileSection = () => {
                 fontWeight={600}
                 fontSize={{ base: 'xl', sm: '2xl', lg: '3xl' }}>
                 <Text
+                
                   as={'span'}
                   color="#ffffff"
                   >
@@ -93,7 +94,7 @@ const ProfileSection = () => {
                >
                 <Image
                   alt={'Hero Image'}
-                  
+                  class="home-img"
                   align={'center'}
                   borderRadius="50%"
                   border="5px solid #E11D48"
