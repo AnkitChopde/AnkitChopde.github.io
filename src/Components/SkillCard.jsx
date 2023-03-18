@@ -14,7 +14,7 @@ const SkillCard = ({img,name}) => {
   transition= "width 0.5s, height 0.5s"
   _hover={{width:"145px",height:"145px"}}
  >
-    <Image className="skills-card-img" fill="#1970F1" margin="auto" w={{base:"60px",md:"70px",lg:"80px"}} src={img}/>
+    <Image filter="brightness(0) invert(1)" position="relative" className="skills-card-img" margin="auto" w={{base:"60px",md:"70px",lg:"80px"}} src={img}/>
     
     <Text className="skills-card-name"  color="#17cf97" fontWeight="extrabold" >{name}</Text>
      </Box>

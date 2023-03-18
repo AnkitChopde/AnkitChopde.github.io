@@ -27,7 +27,7 @@ const ProfileSection = () => {
   }
 
   return (
-       <div style={{backgroundColor:"#152242"}}>
+       <div id="home" style={{backgroundColor:"#152242"}}>
          <Container maxW={'7xl'}>
           <Stack
             
@@ -42,7 +42,7 @@ const ProfileSection = () => {
                 fontWeight={600}
                 fontSize={{ base: 'xl', sm: '2xl', lg: '3xl' }}>
                 <Text
-                
+                  id="user-detail-name"
                   as={'span'}
                   color="#ffffff"
                   >
@@ -53,12 +53,12 @@ const ProfileSection = () => {
                  Full Stack Web Developer
                 </Text>
               </Heading>
-              <Text color={'gray.500'} fontSize="lg">
+              <Text color={'gray.500'} fontSize="lg" id="user-detail-intro">
               An enthusiastic web developer with strong technical as well as interpersonal skills and expertise in MERN stack.
               </Text>
               <Stack spacing={6} direction={'row'}  >
           <Link _hover={{textDecoration:"none"}} href={myResume} onClick={handleResume} download='Ankesh_Chopde_Resume.pdf'>
-          <Button
+          <Button id="resume-button-2"
             rounded={'full'}
             px={6}
            bg="#152242"
@@ -94,9 +94,9 @@ const ProfileSection = () => {
                >
                 <Image
                   alt={'Hero Image'}
-                  class="home-img"
+                  className="home-img"
                   align={'center'}
-                  borderRadius="50%"
+                  borderRadius="30PX 50PX 40PX 20PX"
                   border="5px solid #E11D48"
                   w={'100%'}
                   h={'100%'}

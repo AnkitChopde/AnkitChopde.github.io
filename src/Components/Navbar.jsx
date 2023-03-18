@@ -28,7 +28,7 @@ const Navbar = () => {
         })
       }
   return (
-    <div>
+    <div id="nav-menu">
         <Box >
             
             <nav>
@@ -40,29 +40,29 @@ const Navbar = () => {
             </div>
             <div style={{display:"flex"}}>
             <div >
-                <ul id="nav-menu"
-                className={clicked?"#nav-menu active":"#nav-menu"}  >
-                <AnchorLink offset={"70px"} href="#profile"><li>
+                <ul id="nav-menu1"
+                className={clicked?"#nav-menu1 active":"#nav-menu1"}  >
+                <li><AnchorLink className="nav-link home" offset={"70px"} href="#home">
                 Home
-                </li></AnchorLink>
+                </AnchorLink></li>
                 
                 
                 <li onClick={()=>setClicked(clicked)}>
-                <AnchorLink offset={"70px"}  href="#about">About</AnchorLink>
+                <AnchorLink offset={"70px"} className="nav-link about"  href="#about">About</AnchorLink>
                 </li >
                 <li onClick={()=>setClicked(clicked)}>
-                <AnchorLink offset={"70px"} href="#skills">Skills</AnchorLink>
+                <AnchorLink offset={"70px"} href="#skills" className="nav-link skills">Skills</AnchorLink>
                 </li>
                 
                 <li onClick={()=>setClicked(clicked)}>
-                <AnchorLink offset={"70px"}  href="#projects">Projects</AnchorLink>
+                <AnchorLink offset={"70px"}  href="#projects" className="nav-link projects">Projects</AnchorLink>
                 </li>
                 
                 <li onClick={()=>setClicked(clicked)}>
-                <AnchorLink offset={"70px"}  href="#contact">Contact</AnchorLink>
+                <AnchorLink offset={"70px"}  href="#contact" className="nav-link contact">Contact</AnchorLink>
                 </li>
-               <Link href={myResume} onClick={handleResume} download='Ankesh_Chopde_Resume.pdf'>
-               <li  onClick={() => handleClick('https://drive.google.com/drive/folders/1f2N7wYDLp7B07AJr4Krq6BemAJK0rpAA', 'Ankesh_Chopde_Resume')} style={{borderRadius:"30px",border:"2px solid red",padding:"6px 10px"}}>
+               <Link href={myResume} className="nav-link resume" onClick={handleResume} download='Ankesh_Chopde_Resume.pdf'>
+               <li id="resume-button-1" onClick={() => handleClick('https://drive.google.com/drive/folders/1f2N7wYDLp7B07AJr4Krq6BemAJK0rpAA', 'Ankesh_Chopde_Resume')} style={{borderRadius:"30px",border:"2px solid red",padding:"6px 10px"}}>
                 Resume
                 </li>
                </Link>

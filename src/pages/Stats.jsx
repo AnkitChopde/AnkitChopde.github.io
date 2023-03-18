@@ -6,9 +6,10 @@ import "../App.css"
 const Stats = () => {
   return (
     <Box
-       pt="5"
+       pt="10"
         bg= "#152242"
-        h={{base:"440px",md:"600px",lg:"695px"}}
+        h={{base:"max-content",md:"max-content",lg:"max-content"}}
+        pb="15px"
     >
       <Heading className="heading">Github Stats</Heading>
 
