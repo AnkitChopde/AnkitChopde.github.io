@@ -42,24 +42,24 @@ const Navbar = () => {
             <div >
                 <ul id="nav-menu1" 
                 className={clicked?"#nav-menu1 active":"#nav-menu1"}  >
-                <li className="nav-link home"><AnchorLink  offset={"70px"} href="#home">
+                <li ><AnchorLink className="nav-link home"  offset={"70px"} href="#home">
                 Home
                 </AnchorLink></li>
                 
                 
-                <li onClick={()=>setClicked(clicked)} className="nav-link about">
-                <AnchorLink offset={"70px"}   href="#about">About</AnchorLink>
+                <li onClick={()=>setClicked(clicked)}>
+                <AnchorLink offset={"70px"} className="nav-link about"  href="#about">About</AnchorLink>
                 </li >
-                <li onClick={()=>setClicked(clicked)} className="nav-link skills">
-                <AnchorLink offset={"70px"} href="#skills" >Skills</AnchorLink>
+                <li onClick={()=>setClicked(clicked)}>
+                <AnchorLink offset={"70px"} className="nav-link skills" href="#skills" >Skills</AnchorLink>
                 </li>
                 
-                <li onClick={()=>setClicked(clicked)} className="nav-link projects">
-                <AnchorLink offset={"70px"}  href="#projects" >Projects</AnchorLink>
+                <li onClick={()=>setClicked(clicked)} >
+                <AnchorLink offset={"70px"} className="nav-link projects" href="#projects" >Projects</AnchorLink>
                 </li>
                 
-                <li onClick={()=>setClicked(clicked)} className="nav-link contact">
-                <AnchorLink offset={"70px"}  href="#contact" >Contact</AnchorLink>
+                <li onClick={()=>setClicked(clicked)} >
+                <AnchorLink offset={"70px"} className="nav-link contact"  href="#contact" >Contact</AnchorLink>
                 </li>
                <Link href={myResume} id="resume-button-1"  onClick={handleResume} download='Ankesh_Chopde_Resume.pdf'>
                <li  className="nav-link resume" onClick={() => handleClick('https://drive.google.com/drive/folders/1f2N7wYDLp7B07AJr4Krq6BemAJK0rpAA', 'Ankesh_Chopde_Resume')} style={{borderRadius:"30px",border:"2px solid red",padding:"6px 10px"}}>

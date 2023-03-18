@@ -36,7 +36,7 @@ const ProfileSection = () => {
             py={{ base: 16, md: 24 }}
             textAlign={{base:"center",md:"center",lg:"left"}}
             direction={{ base: 'column', md: 'row' }}>
-            <Stack border="1px solid red" mt={{lg:"7"}} flex={1}  spacing={{ base: 5, md: 10 }}>
+            <Stack mt={{lg:"7"}} flex={1}  spacing={{ base: 5, md: 10 }}>
               <Heading
                 lineHeight={1.4}
                 fontWeight={600}
