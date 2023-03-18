@@ -11,7 +11,6 @@ import Skills from '../pages/Skills';
 import Projects from '../pages/Projects';
 import Stats from '../pages/Stats';
 import Contact from '../pages/Contact';
-import myResume from "../Assets/Ankesh_Chopde_Resume.pdf"
 const Navbar = () => {
 
     const [clicked,setClicked] = useState(false);
@@ -19,14 +18,20 @@ const Navbar = () => {
     const handleResume = ()=>{
       window.open("https://drive.google.com/drive/folders/1f2N7wYDLp7B07AJr4Krq6BemAJK0rpAA")
     }
-    const handleClick = (url, filename) => {
-        axios.get(url, {
-          responseType: 'blob',
-        })
-        .then((res) => {
-          fileDownload(res.data, filename)
-        })
-      }
+    const onButtonClick = () => {
+      // using Java Script method to get PDF file
+      fetch('Ankesh_Chopde_Resume.pdf').then(response => {
+          response.blob().then(blob => {
+              // Creating new object of PDF file
+              const fileURL = window.URL.createObjectURL(blob);
+              // Setting various property values
+              let alink = document.createElement('a');
+              alink.href = fileURL;
+              alink.download = 'Ankesh_Chopde_Resume.pdf';
+              alink.click();
+          })
+      })
+  }
   return (
     <div id="nav-menu">
         <Box >
@@ -61,8 +66,8 @@ const Navbar = () => {
                 <li onClick={()=>setClicked(clicked)} >
                 <AnchorLink offset={"70px"} className="nav-link contact"  href="#contact" >Contact</AnchorLink>
                 </li>
-               <Link href={myResume} id="resume-button-1"  onClick={handleResume} download='pdf'>
-               <li  className="nav-link resume" onClick={() => handleClick('https://drive.google.com/drive/folders/1f2N7wYDLp7B07AJr4Krq6BemAJK0rpAA', 'Ankesh_Chopde_Resume')} style={{borderRadius:"30px",border:"2px solid red",padding:"6px 10px"}}>
+               <Link id="resume-button-1"  onClick={handleResume}>
+               <li  className="nav-link resume" onClick={onButtonClick}>
                 Resume
                 </li>
                </Link>

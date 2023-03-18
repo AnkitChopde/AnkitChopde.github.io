@@ -18,7 +18,7 @@ import {
   Link,
 } from '@chakra-ui/react';
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import myResume from "../Assets/Ankesh_Chopde_Resume.pdf"
+
 
 const ProfileSection = () => {
 
@@ -26,6 +26,20 @@ const ProfileSection = () => {
     window.open("https://drive.google.com/drive/folders/1f2N7wYDLp7B07AJr4Krq6BemAJK0rpAA")
   }
 
+  const onButtonClick = () => {
+    // using Java Script method to get PDF file
+    fetch('Ankesh_Chopde_Resume.pdf').then(response => {
+        response.blob().then(blob => {
+            // Creating new object of PDF file
+            const fileURL = window.URL.createObjectURL(blob);
+            // Setting various property values
+            let alink = document.createElement('a');
+            alink.href = fileURL;
+            alink.download = 'Ankesh_Chopde_Resume.pdf';
+            alink.click();
+        })
+    })
+}
   return (
        <div id="home" style={{backgroundColor:"#152242"}}>
          <Container maxW={'7xl'}>
@@ -57,9 +71,10 @@ const ProfileSection = () => {
               An enthusiastic web developer with strong technical as well as interpersonal skills and expertise in MERN stack.
               </Text>
               <Stack spacing={6} direction={'row'}  >
-          <Link _hover={{textDecoration:"none"}} href={myResume} onClick={handleResume} download='pdf'>
+          <Link _hover={{textDecoration:"none"}} onClick={handleResume} download='pdf'>
           <Button id="resume-button-2"
             rounded={'full'}
+            onClick={onButtonClick}
             px={6}
            bg="#152242"
            color="#ffffff"
