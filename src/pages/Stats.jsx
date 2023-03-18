@@ -37,7 +37,7 @@ const Stats = () => {
           <p style={{ marginTop: "24px" }}>
             <img id="github-streak-stats" style={{borderRadius: "30px 5px 15px 50px", border: "3px solid #E11D48" }}
               align="center"
-              src="https://streak-stats.demolab.com?user=AnkitChopde&theme=vue-dark&hide_border=true&mode=weekly"
+              src="https://github-readme-streak-stats.herokuapp.com/?user=ankitchopde&theme=vue-dark&hide_border=true&mode=weekly"
               alt="ankitchopde"
             />
           </p>
