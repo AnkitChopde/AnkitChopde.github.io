@@ -61,7 +61,7 @@ const Navbar = () => {
                 <li onClick={()=>setClicked(clicked)} >
                 <AnchorLink offset={"70px"} className="nav-link contact"  href="#contact" >Contact</AnchorLink>
                 </li>
-               <Link href={myResume} id="resume-button-1"  onClick={handleResume} download='Ankesh_Chopde_Resume.pdf'>
+               <Link href={myResume} id="resume-button-1"  onClick={handleResume} download='pdf'>
                <li  className="nav-link resume" onClick={() => handleClick('https://drive.google.com/drive/folders/1f2N7wYDLp7B07AJr4Krq6BemAJK0rpAA', 'Ankesh_Chopde_Resume')} style={{borderRadius:"30px",border:"2px solid red",padding:"6px 10px"}}>
                 Resume
                 </li>

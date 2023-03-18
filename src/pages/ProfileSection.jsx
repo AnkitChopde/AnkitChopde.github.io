@@ -57,7 +57,7 @@ const ProfileSection = () => {
               An enthusiastic web developer with strong technical as well as interpersonal skills and expertise in MERN stack.
               </Text>
               <Stack spacing={6} direction={'row'}  >
-          <Link _hover={{textDecoration:"none"}} href={myResume} onClick={handleResume} download='Ankesh_Chopde_Resume.pdf'>
+          <Link _hover={{textDecoration:"none"}} href={myResume} onClick={handleResume} download='pdf'>
           <Button id="resume-button-2"
             rounded={'full'}
             px={6}
