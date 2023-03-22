@@ -28,7 +28,16 @@ import {
 import { BsGithub, BsDiscord, BsPerson } from 'react-icons/bs';
 import React from 'react'
 import styles from "./Contact.module.css"
+import {RxLinkedinLogo} from "react-icons/rx"
 const Contact = () => {
+
+const moveLinkdin = ()=>{
+  window.open("https://www.linkedin.com/in/ankit-chopde-822900187/")
+}
+
+const moveGithub = ()=>{
+  window.open("https://github.com/AnkitChopde")
+}
   return (
         <Container id="contact" bg="#152242" maxW="full" pt="8" mt={0} centerContent overflow="hidden">
            <Heading  className={styles.heading}>Contact Me</Heading>
@@ -78,6 +87,30 @@ const Contact = () => {
                             Nagpur, Maharashtra
                           </Button>
                         </VStack>
+                        <HStack pl={{base:"7",md:"2",lg:"10"}}
+                    mt={{ lg: 10, md: 10 }}
+                    spacing={5}
+                    
+                    alignItems="flex-start">
+                    <IconButton
+                      aria-label="linkedin"
+                      variant="ghost"
+                      size="lg"
+                      onClick={moveLinkdin}
+                      isRound={true}
+                      _hover={{ bg: '#0D74FF' }}
+                      icon={<RxLinkedinLogo size="28px" />}
+                    />
+                    <IconButton
+                      aria-label="github"
+                      variant="ghost"
+                      size="lg"
+                      onClick={moveGithub}
+                      isRound={true}
+                      _hover={{ bg: '#0D74FF' }}
+                      icon={<BsGithub size="28px" />}
+                    />
+                  </HStack>
                       </Box>
                     </Box>
                   </WrapItem>
@@ -127,6 +160,7 @@ const Contact = () => {
                             </Button>
                           </FormControl>
                         </VStack>
+                        
                       </Box>
                     </Box>
                   </WrapItem>
