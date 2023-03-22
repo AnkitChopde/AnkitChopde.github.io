@@ -10,6 +10,7 @@ import Stats from './pages/Stats';
 import Contact from './pages/Contact';
 import SkillCard from './Components/SkillCard';
 import AnimatedCursor from "react-animated-cursor"
+
 function App() {
   return (
     <div className="App">
@@ -34,7 +35,8 @@ function App() {
         '.link'
       ]}
     />
-       <Navbar/>  
+       <Navbar/> 
+        
        
     </div>
   );

@@ -7,6 +7,7 @@ import ProfileSection from './ProfileSection'
 import Projects from './Projects'
 import Skills from './Skills'
 import Stats from './Stats'
+import {ScrollToTop} from '../Components/ScrollToTop';
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <Projects/>
       <Stats/>
       <Contact/>
+      <ScrollToTop/>
       {/* <Projects/> */}
       {/* <Contact/> */}
     </div>

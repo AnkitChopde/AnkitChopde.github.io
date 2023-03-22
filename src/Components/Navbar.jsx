@@ -16,7 +16,7 @@ const Navbar = () => {
     const [clicked,setClicked] = useState(false);
 
     const handleResume = ()=>{
-      window.open("https://drive.google.com/drive/folders/1f2N7wYDLp7B07AJr4Krq6BemAJK0rpAA")
+      window.open("https://drive.google.com/file/d/1hgRxgDKguwd78F2AQVfwzSx7DBm-3K8M/view?usp=share_link")
     }
     const onButtonClick = () => {
       // using Java Script method to get PDF file
@@ -45,26 +45,26 @@ const Navbar = () => {
             </div>
             <div style={{display:"flex"}}>
             <div >
-                <ul id="nav-menu1" 
+                <ul id="nav-menu1" onClick={()=>setClicked(!clicked)}
                 className={clicked?"#nav-menu1 active":"#nav-menu1"}  >
                 <li ><AnchorLink className="nav-link home"  offset={"70px"} href="#home">
                 Home
                 </AnchorLink></li>
                 
                 
-                <li onClick={()=>setClicked(clicked)}>
+                <li>
                 <AnchorLink offset={"70px"} className="nav-link about"  href="#about">About</AnchorLink>
                 </li >
-                <li onClick={()=>setClicked(clicked)}>
+                <li >
                 <AnchorLink offset={"70px"} className="nav-link skills" href="#skills" >Skills</AnchorLink>
                 </li>
                 
-                <li onClick={()=>setClicked(clicked)} >
+                <li >
                 <AnchorLink offset={"70px"} className="nav-link projects" href="#projects" >Projects</AnchorLink>
                 </li>
                 
-                <li onClick={()=>setClicked(clicked)} >
-                <AnchorLink offset={"70px"} className="nav-link contact"  href="#contact" >contact</AnchorLink>
+                <li  >
+                <AnchorLink offset={"70px"} className="nav-link contact"  href="#contact" >Contact</AnchorLink>
                 </li>
                <Link id="resume-button-1"  onClick={handleResume}>
                <li  className="nav-link resume" onClick={onButtonClick}>

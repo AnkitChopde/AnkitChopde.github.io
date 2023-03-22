@@ -23,7 +23,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 const ProfileSection = () => {
 
   const handleResume = ()=>{
-    window.open("https://drive.google.com/drive/folders/1f2N7wYDLp7B07AJr4Krq6BemAJK0rpAA")
+    window.open("https://drive.google.com/file/d/1hgRxgDKguwd78F2AQVfwzSx7DBm-3K8M/view?usp=share_link")
   }
 
   const onButtonClick = () => {
@@ -67,8 +67,8 @@ const ProfileSection = () => {
                  Full Stack Web Developer
                 </Text>
               </Heading>
-              <Text color={'gray.500'} fontSize="lg" id="user-detail-intro">
-              An enthusiastic web developer with strong technical as well as interpersonal skills and expertise in MERN stack.
+              <Text color={'gray.500'} fontSize="lg">
+              An enthusiastic web developer with strong technical as well as interpersonal skills and expertise in MERN (MongoDB, ExpressJS, ReactJS, NodeJS) stack.
               </Text>
               <Stack spacing={6} direction={'row'}  >
           <Link id="resume-button-2" _hover={{textDecoration:"none"}} onClick={handleResume} download='pdf'>
