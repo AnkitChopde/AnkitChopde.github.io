@@ -67,7 +67,7 @@ const ProfileSection = () => {
                  Full Stack Web Developer
                 </Text>
               </Heading>
-              <Text color={'gray.500'} fontSize="lg">
+              <Text color={'gray.500'} fontSize="lg" id="user-detail-intro">
               An enthusiastic web developer with strong technical as well as interpersonal skills and expertise in MERN (MongoDB, ExpressJS, ReactJS, NodeJS) stack.
               </Text>
               <Stack spacing={6} direction={'row'}  >
