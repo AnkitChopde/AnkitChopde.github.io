@@ -96,6 +96,7 @@ const moveGithub = ()=>{
                       aria-label="linkedin"
                       variant="ghost"
                       size="lg"
+                      id="contact-linkedin"
                       onClick={moveLinkdin}
                       isRound={true}
                       _hover={{ bg: '#0D74FF' }}
@@ -105,6 +106,7 @@ const moveGithub = ()=>{
                       aria-label="github"
                       variant="ghost"
                       size="lg"
+                      id="contact-github"
                       onClick={moveGithub}
                       isRound={true}
                       _hover={{ bg: '#0D74FF' }}
