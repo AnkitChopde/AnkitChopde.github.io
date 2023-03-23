@@ -1,4 +1,4 @@
-import {  Spacer } from '@chakra-ui/react'
+import {  Link, Spacer } from '@chakra-ui/react'
 import {
   Container,
   Flex,
@@ -39,7 +39,7 @@ const moveGithub = ()=>{
   window.open("https://github.com/AnkitChopde")
 }
   return (
-        <Container id="contact" bg="#152242" maxW="full" pt="8" mt={0} centerContent overflow="hidden">
+        <Container id="contact" bg="#152242" maxW="full" pt="8" mt={0} centerContent >
            <Heading  className={styles.heading}>Contact Me</Heading>
           <Flex>
             <Box
@@ -87,31 +87,31 @@ const moveGithub = ()=>{
                             Nagpur, Maharashtra
                           </Button>
                         </VStack>
-                        <HStack pl={{base:"7",md:"2",lg:"10"}}
+                        <HStack pl={{base:"30",md:"2",lg:"10"}}
                     mt={{ lg: 10, md: 10 }}
                     spacing={5}
                     
                     alignItems="flex-start">
-                    <IconButton
+                   <Link onClick={moveLinkdin} id="contact-linkedin">
+                   <IconButton
                       aria-label="linkedin"
                       variant="ghost"
                       size="lg"
-                      id="contact-linkedin"
-                      onClick={moveLinkdin}
                       isRound={true}
                       _hover={{ bg: '#0D74FF' }}
                       icon={<RxLinkedinLogo size="28px" />}
                     />
+                   </Link>
+                    <Link onClick={moveGithub} id="contact-github">
                     <IconButton
                       aria-label="github"
                       variant="ghost"
                       size="lg"
-                      id="contact-github"
-                      onClick={moveGithub}
                       isRound={true}
                       _hover={{ bg: '#0D74FF' }}
                       icon={<BsGithub size="28px" />}
                     />
+                    </Link>
                   </HStack>
                       </Box>
                     </Box>
