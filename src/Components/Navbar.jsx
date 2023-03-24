@@ -68,12 +68,7 @@ const Navbar = () => {
                 <li  >
                 <AnchorLink offset={"70px"}  id="nav-link" className="nav-link contact"  href="#contact" >Contact</AnchorLink>
                 </li>
-               <Link id="resume-button-1"  onClick={handleResume}>
-               <li  className="nav-link resume" onClick={onButtonClick}>
-                Resume
-                </li>
-               </Link>
-                 
+               
                <Link id="resume-button-1"  onClick={handleResume}>
                <li  className="nav-link resume" onClick={onButtonClick}>
                 Resume
