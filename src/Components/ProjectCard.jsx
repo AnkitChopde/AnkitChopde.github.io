@@ -3,7 +3,7 @@ import React from 'react'
 import Pro1 from "../Images/Objectopedia.png"
 import {FaEye} from "react-icons/fa"
 import {BsGithub} from "react-icons/bs"
-const ProjectCard = () => {
+const ProjectCard = ({img,desc,title,stacks}) => {
 
     const handleClick = () => {
         window.open("https://github.com/SubodhSingh8543/zippy-question-7549");
@@ -14,13 +14,11 @@ const ProjectCard = () => {
       }
   return (
     <Box className="project-card" w={{ base: "100%", md: "400px", lg: "400px" }} h="500px" p="20px" borderRadius="10px" border="2px solid #E11D48">
-      <Image src={Pro1} borderRadius="10px" alt="Project"></Image>
-      <Text className="project-title" textAlign="center" color="#E11D48" fontSize="18px" mt="15px" fontWeight="bold">Object"o"Pedia</Text>
+      <Image src={img} borderRadius="10px" alt="Project"></Image>
+      <Text className="project-title" textAlign="center" color="#E11D48" fontSize="18px" mt="15px" fontWeight="bold">{title}</Text>
       <Text fontSize={{ base: "sm", md: "md", lg: "16px" }} textAlign="left"
     color="#DBD9D9" mt="15px" lineHeight="25px" className="project-description">
-        An e-Commerce website where one can able to buy daily lifestyle
-        products. Design and tech focussed homegrown lifestyle accessories brand
-        inspiring everyday possibilities.
+        {desc}
       </Text>
       <HStack mt="4" spacing="8">
         <Text
@@ -30,7 +28,7 @@ const ProjectCard = () => {
           <i>Tech Stack</i>
         </Text>
         <Text className="project-tech-stack" textAlign="left" color="#DBD9D9" fontWeight="bold" w="70%">
-          HTML, CSS, JavaScript, React, Redux, ChakraUI, firebase
+          {stacks}
         </Text>
       </HStack>
       <Center >

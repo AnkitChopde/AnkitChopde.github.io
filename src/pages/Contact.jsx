@@ -54,8 +54,8 @@ const moveGithub = ()=>{
                 <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
                   <WrapItem>
                     <Box>
-                      <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
-                        <VStack pl={{base:"7",md:"2",lg:"0"}} spacing={3} alignItems="flex-start">
+                      <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }} pl={{base:'10'}}>
+                        <VStack justifyContent="center" spacing={3} alignItems="flex-start">
                           <Button id="contact-phone"
                             size="md"
                             height="48px"
@@ -87,7 +87,7 @@ const moveGithub = ()=>{
                             Nagpur, Maharashtra
                           </Button>
                         </VStack>
-                        <HStack pl={{base:"30",md:"2",lg:"10"}}
+                        <HStack justifyContent={"center"}
                     mt={{ lg: 10, md: 10 }}
                     spacing={5}
                     

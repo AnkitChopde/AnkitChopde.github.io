@@ -3,67 +3,21 @@ import SkillCard from "../Components/SkillCard";
 import { Box, Flex, Heading, SimpleGrid } from "@chakra-ui/react";
 import styles from "./Skills.module.css"
 import {SiMongodb} from "react-icons/si"
+import {FaHtml5} from "react-icons/fa";
+import {FaCss3Alt} from "react-icons/fa";
+import {SiJavascript} from "react-icons/si";
+import {SiTypescript} from "react-icons/si";
+import {FaReact} from "react-icons/fa";
+import {SiRedux} from "react-icons/si";
+import {TbBrandNextjs} from "react-icons/tb";
+import {SiChakraui} from "react-icons/si";
+import {FaNodeJs} from "react-icons/fa";
+import {SiExpress} from "react-icons/si";
 import html from "../Images/html.png"
 import css from "../Images/css-3.png"
 const Skills = () => {
 
-  // const arr = [
-  //   {
-  //     img: "https://chiranjeev-thapliyal.vercel.app/svg/html-5.svg",
-  //     name: "HTML",
-  //   },
-  //   {
-  //     img: "https://chiranjeev-thapliyal.vercel.app/svg/css3.svg",
-  //     name: "CSS",
-  //   },
-  //   {
-  //     img: "https://chiranjeev-thapliyal.vercel.app/svg/javascript.svg",
-  //     name: "JAVASCRIPT",
-  //   },
-  //   { img: react1, name: "REACT" },
-  //   { img: mongo, name: "MONGODB" },
-  //   {
-  //     img: "https://chiranjeev-thapliyal.vercel.app/svg/redux.svg",
-  //     name: "REDUX",
-  //   },
-  //   { img: node1, name: "NODE JS" },
-  //   { img: "https://chiranjeev-thapliyal.vercel.app/svg/git.svg", name: "GIT" },
-  //   { img: chakra, name: "CHAKRA UI" },
-  //   { img: post, name: "POSTMAN " },
-  //   { img: mongoo, name: "MONGOOSE" },
-  //   { img: express, name: "EXPRESS" },
-  // ];
-  // const arr1 = [
-  //   {
-  //     img: "https://chiranjeev-thapliyal.vercel.app/svg/html-5.svg",
-  //     name: "HTML",
-  //   },
-  //   {
-  //     img: "https://chiranjeev-thapliyal.vercel.app/svg/css3.svg",
-  //     name: "CSS",
-  //   },
-  //   {
-  //     img: "https://chiranjeev-thapliyal.vercel.app/svg/javascript.svg",
-  //     name: "JAVASCRIPT",
-  //   },
-  //   { img: react1, name: "REACT" },
-  //   {
-  //     img: "https://chiranjeev-thapliyal.vercel.app/svg/redux.svg",
-  //     name: "REDUX",
-  //   },
-  //   { img: chakra, name: "CHAKRA UI" },
-  // ];
-  // const arr2 = [
-  //   { img: mongo, name: "MONGODB" },
-  //   {
-  //     img: "https://chiranjeev-thapliyal.vercel.app/svg/redux.svg",
-  //     name: "REDUX",
-  //   },
-  //   { img: node1, name: "NODE JS" },
-  //   { img: post, name: "POSTMAN " },
-  //   { img: mongoo, name: "MONGOOSE" },
-  //   { img: express, name: "EXPRESS" },
-  // ];
+  
   return (
     <div id="skills" style={{backgroundColor:"#152242"}}>
 
