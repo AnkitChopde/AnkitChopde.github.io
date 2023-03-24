@@ -4,7 +4,8 @@ import "./Navbar.css"
 import axios from 'axios'
 import fileDownload from 'js-file-download'
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import {Link, NavLink} from "react-router-dom"
+
+import { Link } from "react-scroll";
 import Home from '../pages/Home';
 import About from '../pages/About';
 import Skills from '../pages/Skills';
@@ -47,35 +48,38 @@ const Navbar = () => {
             <div >
                 <ul id="nav-menu1" onClick={()=>setClicked(!clicked)}
                 className={clicked?"#nav-menu1 active":"#nav-menu1"}  >
-                <li >
-                <a className="nav-link home" href='#home' smooth>Home</a>
-                </li>
-                {/* 
-                                            
-                                            
-                                            <a className="nav-link projects" href='#projects' smooth>Project</a>
-                                            <a className="nav-link contact" href='#contact' smooth>Contact</a>
-                 */}
-                <li >
-                <a className="nav-link about" href='#about' smooth>About Me</a>
+
+                    <li ><AnchorLink  id="nav-link" className="nav-link home"  offset={"70px"} href="#home">
+                Home
+                </AnchorLink></li>
+                
+                
+                <li>
+                <AnchorLink offset={"70px"}  id="nav-link" className="nav-link about"  href="#about">About</AnchorLink>
                 </li >
                 <li >
-                <a className="nav-link skills" href='#skills' smooth>Skills</a>
+                <AnchorLink offset={"70px"}  id="nav-link" className="nav-link skills" href="#skills" >Skills</AnchorLink>
                 </li>
                 
                 <li >
-                <a className="nav-link projects" style={{offset:"60px"}} href='#projects' smooth>Project</a>
+                <AnchorLink offset={"70px"}  id="nav-link" className="nav-link projects" href="#projects" >Projects</AnchorLink>
                 </li>
                 
-                <li >
-                <a className="nav-link contact" href='#contact' smooth>Contact</a>
+                <li  >
+                <AnchorLink offset={"70px"}  id="nav-link" className="nav-link contact"  href="#contact" >Contact</AnchorLink>
                 </li>
                <Link id="resume-button-1"  onClick={handleResume}>
                <li  className="nav-link resume" onClick={onButtonClick}>
                 Resume
                 </li>
                </Link>
-            
+                 
+               <Link id="resume-button-1"  onClick={handleResume}>
+               <li  className="nav-link resume" onClick={onButtonClick}>
+                Resume
+                </li>
+               </Link>
+    
                 </ul>
             </div>
             <div id="mobile" >
