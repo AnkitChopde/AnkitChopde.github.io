@@ -74,7 +74,7 @@ const ProfileSection = () => {
               An enthusiastic web developer with strong technical as well as interpersonal skills and expertise in MERN stack.
               </Text>
               <Stack spacing={6} direction={'row'} justifyContent={{base:"center",md:"center",lg:"left"}}  >
-          <Link id="resume-button-2" _hover={{textDecoration:"none"}} onClick={handleResume} download='pdf'>
+          <Link _hover={{textDecoration:"none"}} onClick={handleResume} download='pdf'>
           {/* <Button 
             rounded={'full'}
             onClick={onButtonClick}
@@ -86,7 +86,7 @@ const ProfileSection = () => {
             _hover={{ bg: '#E11D48',border:"2px solid white" }}>
             Resume
           </Button> */}
-          <Box rounded={'full'}
+          <Box id="resume-button-2" rounded={'full'}
             onClick={onButtonClick}
            bg="#152242"
            color="#ffffff"
