@@ -47,24 +47,28 @@ const Navbar = () => {
             <div >
                 <ul id="nav-menu1" onClick={()=>setClicked(!clicked)}
                 className={clicked?"#nav-menu1 active":"#nav-menu1"}  >
-                <li ><AnchorLink className="nav-link home"  offset={"70px"} href="#home">
-                Home
-                </AnchorLink></li>
-                
-                
-                <li className="nav-link about">
-                <AnchorLink offset={"70px"}  href="#about">About</AnchorLink>
+                <li >
+                <a className="nav-link home" href='#home' smooth>Home</a>
+                </li>
+                {/* 
+                                            
+                                            
+                                            <a className="nav-link projects" href='#projects' smooth>Project</a>
+                                            <a className="nav-link contact" href='#contact' smooth>Contact</a>
+                 */}
+                <li >
+                <a className="nav-link about" href='#about' smooth>About Me</a>
                 </li >
-                <li className="nav-link skills">
-                <AnchorLink offset={"70px"}  href="#skills" >Skills</AnchorLink>
+                <li >
+                <a className="nav-link skills" href='#skills' smooth>Skills</a>
                 </li>
                 
-                <li className="nav-link projects">
-                <AnchorLink offset={"70px"} href="#projects" >Projects</AnchorLink>
+                <li >
+                <a className="nav-link projects" style={{offset:"60px"}} href='#projects' smooth>Project</a>
                 </li>
                 
-                <li  className="nav-link contact">
-                <AnchorLink offset={"70px"}   href="#contact" >Contact</AnchorLink>
+                <li >
+                <a className="nav-link contact" href='#contact' smooth>Contact</a>
                 </li>
                <Link id="resume-button-1"  onClick={handleResume}>
                <li  className="nav-link resume" onClick={onButtonClick}>
