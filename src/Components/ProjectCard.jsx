@@ -33,14 +33,16 @@ const ProjectCard = () => {
           HTML, CSS, JavaScript, React, Redux, ChakraUI, firebase
         </Text>
       </HStack>
-      <Center>
+      <Center >
         <HStack mt={{ base: "3", md: "7", lg: "7" }} spacing="5.5rem">
           <Link className="project-github-link" onClick={handleDeployed}>
             <IconButton
               aria-label="github"
               variant="ghost"
               size="lg"
+              
               border="2px solid E11D48"
+              overflow='hidden'
               isRound={true}
               _hover={{ bg: "#0D74FF" }}
               icon={<FaEye size="28px" />}
@@ -52,7 +54,6 @@ const ProjectCard = () => {
               variant="ghost"
               size="lg"
               border="2px solid E11D48"
-              isRound={true}
               _hover={{ bg: "#0D74FF" }}
               icon={<BsGithub size="28px" />}
             />

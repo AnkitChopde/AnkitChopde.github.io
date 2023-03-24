@@ -16,12 +16,13 @@ import {
   IconProps,
   useColorModeValue,
   Link,
+  useToast,
 } from '@chakra-ui/react';
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 
 const ProfileSection = () => {
-
+ const toast = useToast();
   const handleResume = ()=>{
     window.open("https://drive.google.com/file/d/1hgRxgDKguwd78F2AQVfwzSx7DBm-3K8M/view?usp=share_link")
   }
@@ -37,9 +38,11 @@ const ProfileSection = () => {
             alink.href = fileURL;
             alink.download = 'Ankesh_Chopde_Resume.pdf';
             alink.click();
+
         })
     })
 }
+
   return (
        <div id="home" style={{backgroundColor:"#152242"}}>
          <Container maxW={'7xl'}>
@@ -68,29 +71,41 @@ const ProfileSection = () => {
                 </Text>
               </Heading>
               <Text color={'gray.500'} fontSize="lg" id="user-detail-intro">
-              An enthusiastic web developer with strong technical as well as interpersonal skills and expertise in MERN (MongoDB, ExpressJS, ReactJS, NodeJS) stack.
+              An enthusiastic web developer with strong technical as well as interpersonal skills and expertise in MERN stack.
               </Text>
-              <Stack spacing={6} direction={'row'}  >
+              <Stack spacing={6} direction={'row'} justifyContent={{base:"center",md:"center",lg:"left"}}  >
           <Link id="resume-button-2" _hover={{textDecoration:"none"}} onClick={handleResume} download='pdf'>
-          <Button 
+          {/* <Button 
             rounded={'full'}
             onClick={onButtonClick}
             px={6}
+            
            bg="#152242"
            color="#ffffff"
            border="2px solid #E11D48"
             _hover={{ bg: '#E11D48',border:"2px solid white" }}>
             Resume
-          </Button>
+          </Button> */}
+          <Box rounded={'full'}
+            onClick={onButtonClick}
+           bg="#152242"
+           color="#ffffff"
+           border="2px solid #E11D48"
+            _hover={{ bg: '#E11D48',border:"2px solid white" }}
+             p="5px 25px" >Resume</Box>
           </Link>
 
           
-          <Button rounded={'full'}  bg="#152242"
+          {/* <Button rounded={'full'}  bg="#152242"
            color="#ffffff"
            border="2px solid #E11D48"
             _hover={{ bg: '#E11D48',border:"2px solid white" }} px={6}>
             <AnchorLink offset={"40px"}  href="#contact">Hire me</AnchorLink>
-          </Button>
+          </Button> */}
+          <Box rounded={'full'}  bg="#152242"
+           color="#ffffff"
+           border="2px solid #E11D48"
+            _hover={{ bg: '#E11D48',border:"2px solid white" }} p="5px 25px" ><AnchorLink offset={"40px"}  href="#contact">Hire me</AnchorLink></Box>
         </Stack>
             </Stack>
             

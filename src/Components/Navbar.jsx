@@ -52,19 +52,19 @@ const Navbar = () => {
                 </AnchorLink></li>
                 
                 
-                <li>
-                <AnchorLink offset={"70px"} className="nav-link about"  href="#about">About</AnchorLink>
+                <li className="nav-link about">
+                <AnchorLink offset={"70px"}  href="#about">About</AnchorLink>
                 </li >
-                <li >
-                <AnchorLink offset={"70px"} className="nav-link skills" href="#skills" >Skills</AnchorLink>
+                <li className="nav-link skills">
+                <AnchorLink offset={"70px"}  href="#skills" >Skills</AnchorLink>
                 </li>
                 
-                <li >
-                <AnchorLink offset={"70px"} className="nav-link projects" href="#projects" >Projects</AnchorLink>
+                <li className="nav-link projects">
+                <AnchorLink offset={"70px"} href="#projects" >Projects</AnchorLink>
                 </li>
                 
-                <li  >
-                <AnchorLink offset={"70px"} className="nav-link contact"  href="#contact" >Contact</AnchorLink>
+                <li  className="nav-link contact">
+                <AnchorLink offset={"70px"}   href="#contact" >Contact</AnchorLink>
                 </li>
                <Link id="resume-button-1"  onClick={handleResume}>
                <li  className="nav-link resume" onClick={onButtonClick}>

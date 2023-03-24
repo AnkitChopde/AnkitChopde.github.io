@@ -6,6 +6,64 @@ import {SiMongodb} from "react-icons/si"
 import html from "../Images/html.png"
 import css from "../Images/css-3.png"
 const Skills = () => {
+
+  // const arr = [
+  //   {
+  //     img: "https://chiranjeev-thapliyal.vercel.app/svg/html-5.svg",
+  //     name: "HTML",
+  //   },
+  //   {
+  //     img: "https://chiranjeev-thapliyal.vercel.app/svg/css3.svg",
+  //     name: "CSS",
+  //   },
+  //   {
+  //     img: "https://chiranjeev-thapliyal.vercel.app/svg/javascript.svg",
+  //     name: "JAVASCRIPT",
+  //   },
+  //   { img: react1, name: "REACT" },
+  //   { img: mongo, name: "MONGODB" },
+  //   {
+  //     img: "https://chiranjeev-thapliyal.vercel.app/svg/redux.svg",
+  //     name: "REDUX",
+  //   },
+  //   { img: node1, name: "NODE JS" },
+  //   { img: "https://chiranjeev-thapliyal.vercel.app/svg/git.svg", name: "GIT" },
+  //   { img: chakra, name: "CHAKRA UI" },
+  //   { img: post, name: "POSTMAN " },
+  //   { img: mongoo, name: "MONGOOSE" },
+  //   { img: express, name: "EXPRESS" },
+  // ];
+  // const arr1 = [
+  //   {
+  //     img: "https://chiranjeev-thapliyal.vercel.app/svg/html-5.svg",
+  //     name: "HTML",
+  //   },
+  //   {
+  //     img: "https://chiranjeev-thapliyal.vercel.app/svg/css3.svg",
+  //     name: "CSS",
+  //   },
+  //   {
+  //     img: "https://chiranjeev-thapliyal.vercel.app/svg/javascript.svg",
+  //     name: "JAVASCRIPT",
+  //   },
+  //   { img: react1, name: "REACT" },
+  //   {
+  //     img: "https://chiranjeev-thapliyal.vercel.app/svg/redux.svg",
+  //     name: "REDUX",
+  //   },
+  //   { img: chakra, name: "CHAKRA UI" },
+  // ];
+  // const arr2 = [
+  //   { img: mongo, name: "MONGODB" },
+  //   {
+  //     img: "https://chiranjeev-thapliyal.vercel.app/svg/redux.svg",
+  //     name: "REDUX",
+  //   },
+  //   { img: node1, name: "NODE JS" },
+  //   { img: post, name: "POSTMAN " },
+  //   { img: mongoo, name: "MONGOOSE" },
+  //   { img: express, name: "EXPRESS" },
+  // ];
   return (
     <div id="skills" style={{backgroundColor:"#152242"}}>
 
@@ -15,7 +73,7 @@ const Skills = () => {
         <Flex mt="10" flexWrap={"wrap"} justifyContent="center"
               
               gap={7}>
-          <SkillCard img={html} name="HTML" />
+          <SkillCard img={"https://chiranjeev-thapliyal.vercel.app/svg/html-5.svg"} name="HTML" />
           <SkillCard img={css} name="CSS"/>
           <SkillCard img="https://chiranjeev-thapliyal.vercel.app/svg/javascript.svg" name="JavaScript" />
           <SkillCard img="https://rahul-rajeevan-portfolio.netlify.app/static/media/react1.4e0c97009b885bfa75c5412262a46f5f.svg" name="React" />
