@@ -43,8 +43,8 @@ const Navbar = () => {
             <h1 style={{color:"#17cf97",}}>PORT<span style={{color:"#E11D48",fontWeight:"bold"}}>FOLIO</span></h1>
             </div>
             <div style={{display:"flex"}}>
-            <div id="nav-menu1" onClick={()=>setClicked(!clicked)}
-                className={clicked?"#nav-menu1 active":"#nav-menu1"} >
+            <div id="nav-menu" onClick={()=>setClicked(!clicked)}
+                className={clicked?"#nav-menu active":"#nav-menu"} >
                 
 
                    <Link id="link" className="nav-link home"  href="#home"> 
