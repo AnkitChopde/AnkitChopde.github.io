@@ -71,7 +71,7 @@ const ProfileSection = () => {
                 </Text>
               </Heading>
               <Text color={'gray.500'} fontSize="lg" id="user-detail-intro">
-              An enthusiastic web developer with strong technical as well as interpersonal skills and expertise in MERN stack.
+              An enthusiastic web developer with strong technical as well as interpersonal skills and expertise in MERN (Proficient in MongoDB, ExpressJS, ReactJS, HTML, CSS, JavaScript, NodeJS) stack.
               </Text>
               <Stack spacing={6} direction={'row'} justifyContent={{base:"center",md:"center",lg:"left"}}  >
           <Link _hover={{textDecoration:"none"}} onClick={handleResume} download='pdf'>
