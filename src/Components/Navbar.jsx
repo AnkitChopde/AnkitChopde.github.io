@@ -32,7 +32,7 @@ const Navbar = () => {
       })
   }
   return (
-    <div id="nav-menu">
+    <div >
         <Box >
             
             <nav>
