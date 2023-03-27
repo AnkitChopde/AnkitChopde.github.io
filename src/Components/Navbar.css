@@ -18,12 +18,12 @@ nav{
     align-items:center;
 }
 
-#nav-menu1 li{
+#nav-menu1 #link{
     list-style:none;
     padding:0px 20px;
     position:relative;
 }
-#nav-menu1 li {
+#nav-menu1 #link {
     font-size:1.3rem;
     font-family:Roboto, sans-serif;
     font-weight:600;
@@ -34,18 +34,10 @@ nav{
     position:absolute;
 }
 
-#nav-menu1 li:hover{
+#nav-menu1 #link:hover{
     color:#E11D48;   
 }
-#nav-menu1 li:hover::after{
-    content:"";
-    width:30%;
-    height:2px;
-    background:#E11D48;
-    position:absolute;
-    bottom:-4px;
-    left:20px;
-}
+
 #mobile i{
     color:white;
     align-items:center;
@@ -74,7 +66,7 @@ nav{
     #nav-menu1.active{
         right:0px;
     }
-    #nav-menu1 li{
+    #nav-menu1 #link{
         margin-bottom:25px;
 
     }
@@ -88,9 +80,3 @@ nav{
     cursor:pointer;
     }
 }   
-
-
-@media screen and (max-width:412px){
-
-    
-}

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {Box, Button,Link} from "@chakra-ui/react"
+import {Box, Button,Link, Text} from "@chakra-ui/react"
 import "./Navbar.css"
 import axios from 'axios'
 import fileDownload from 'js-file-download'
@@ -15,16 +15,15 @@ const Navbar = () => {
 
     const [clicked,setClicked] = useState(false);
 
-    const handleResume = ()=>{
-      window.open("https://drive.google.com/file/d/1hgRxgDKguwd78F2AQVfwzSx7DBm-3K8M/view?usp=share_link")
-    }
+    
     const onButtonClick = () => {
       // using Java Script method to get PDF file
+      window.open("https://drive.google.com/file/d/1hgRxgDKguwd78F2AQVfwzSx7DBm-3K8M/view?usp=share_link")
       fetch('Ankesh_Chopde_Resume.pdf').then(response => {
           response.blob().then(blob => {
               // Creating new object of PDF file
               const fileURL = window.URL.createObjectURL(blob);
-              // Setting various property values
+           
               let alink = document.createElement('a');
               alink.href = fileURL;
               alink.download = 'Ankesh_Chopde_Resume.pdf';
@@ -44,37 +43,36 @@ const Navbar = () => {
             <h1 style={{color:"#17cf97",}}>PORT<span style={{color:"#E11D48",fontWeight:"bold"}}>FOLIO</span></h1>
             </div>
             <div style={{display:"flex"}}>
-            <div >
-                <ul id="nav-menu1" onClick={()=>setClicked(!clicked)}
-                className={clicked?"#nav-menu1 active":"#nav-menu1"}  >
+            <div id="nav-menu1" onClick={()=>setClicked(!clicked)}
+                className={clicked?"#nav-menu1 active":"#nav-menu1"} >
+                
 
-                   <Link  className="nav-link home"  offset={"70px"} href="#home"> <li >
-                Home</li>
+                   <Link id="link" className="nav-link home"  href="#home"> 
+                Home
                 </Link>
                 
                 
                 
-                <Link offset={"70px"} className="nav-link about"  href="#about"><li>About</li ></Link>
+                <Link id="link"  className="nav-link about"  href="#about">About</Link>
                 
-                <li >
-                <Link offset={"70px"}  className="nav-link skills" href="#skills" >Skills</Link>
-                </li>
                 
-                <li >
-                <Link offset={"70px"}  className="nav-link projects" href="#projects" >Projects</Link>
-                </li>
+                <Link id="link"  className="nav-link skills" href="#skills" >Skills</Link>
                 
-                <li  >
-                <Link offset={"70px"} className="nav-link contact"  href="#contact" >Contact</Link>
-                </li>
+                
+                
+                <Link id="link"  className="nav-link projects" href="#projects" >Projects</Link>
+                
+                
+                
+                <Link id="link"  className="nav-link contact"  href="#contact" >Contact</Link>
+                
                
-               <Link id="resume-button-1"  onClick={handleResume}>
-               <li  className="nav-link resume" onClick={onButtonClick}>
+               <Link  id="resume-button-1" >
+               <Text id="link" className="nav-link resume" onClick={onButtonClick}>
                 Resume
-                </li>
+                </Text>
                </Link>
-    
-                </ul>
+                
             </div>
             <div id="mobile" >
                 <i onClick={()=>setClicked(!clicked)}
