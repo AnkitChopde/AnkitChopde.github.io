@@ -33,7 +33,7 @@ const Navbar = () => {
   }
   return (
     <div >
-        <Box >
+        <Box id="nav-menu">
             
             <nav>
             <div style={{display:"flex",alignItems:"center",gap:"10px"}}>
