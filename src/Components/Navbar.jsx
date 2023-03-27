@@ -48,14 +48,14 @@ const Navbar = () => {
                 <ul id="nav-menu1" onClick={()=>setClicked(!clicked)}
                 className={clicked?"#nav-menu1 active":"#nav-menu1"}  >
 
-                    <li ><Link  className="nav-link home"  offset={"70px"} href="#home">
-                Home
-                </Link></li>
+                   <Link  className="nav-link home"  offset={"70px"} href="#home"> <li >
+                Home</li>
+                </Link>
                 
                 
-                <li>
-                <Link offset={"70px"} className="nav-link about"  href="#about">About</Link>
-                </li >
+                
+                <Link offset={"70px"} className="nav-link about"  href="#about"><li>About</li ></Link>
+                
                 <li >
                 <Link offset={"70px"}  className="nav-link skills" href="#skills" >Skills</Link>
                 </li>
