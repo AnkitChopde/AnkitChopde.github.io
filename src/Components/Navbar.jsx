@@ -50,23 +50,23 @@ const Navbar = () => {
                 className={clicked?"#nav-menu1 active":"#nav-menu1"}  >
 
                     <li ><AnchorLink  id="nav-link" className="nav-link home"  offset={"70px"} href="#home">
-                Home
+                <a href="">Home</a>
                 </AnchorLink></li>
                 
                 
                 <li>
-                <AnchorLink offset={"70px"}  id="nav-link" className="nav-link about"  href="#about">About</AnchorLink>
+                <AnchorLink offset={"70px"}  id="nav-link" className="nav-link about"  href="#about"><a href="">About</a></AnchorLink>
                 </li >
                 <li >
-                <AnchorLink offset={"70px"}  id="nav-link" className="nav-link skills" href="#skills" >Skills</AnchorLink>
+                <AnchorLink offset={"70px"}  id="nav-link" className="nav-link skills" href="#skills" ><a href="">Skills</a></AnchorLink>
                 </li>
                 
                 <li >
-                <AnchorLink offset={"70px"}  id="nav-link" className="nav-link projects" href="#projects" >Projects</AnchorLink>
+                <AnchorLink offset={"70px"}  id="nav-link" className="nav-link projects" href="#projects" ><a href="">Projects</a></AnchorLink>
                 </li>
                 
                 <li  >
-                <AnchorLink offset={"70px"}  id="nav-link" className="nav-link contact"  href="#contact" >Contact</AnchorLink>
+                <AnchorLink offset={"70px"}  id="nav-link" href="#contact" ><a href="" className="nav-link contact">Contact</a></AnchorLink>
                 </li>
                
                <Link id="resume-button-1"  onClick={handleResume}>
