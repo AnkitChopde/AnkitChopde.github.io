@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
-import {Box, Button} from "@chakra-ui/react"
+import {Box, Button,Link} from "@chakra-ui/react"
 import "./Navbar.css"
 import axios from 'axios'
 import fileDownload from 'js-file-download'
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
-import { Link } from "react-scroll";
 import Home from '../pages/Home';
 import About from '../pages/About';
 import Skills from '../pages/Skills';
@@ -49,24 +48,24 @@ const Navbar = () => {
                 <ul id="nav-menu1" onClick={()=>setClicked(!clicked)}
                 className={clicked?"#nav-menu1 active":"#nav-menu1"}  >
 
-                    <li ><AnchorLink  id="nav-link" className="nav-link home"  offset={"70px"} href="#home">
-                <a href="">Home</a>
-                </AnchorLink></li>
+                    <li ><Link  className="nav-link home"  offset={"70px"} href="#home">
+                Home
+                </Link></li>
                 
                 
                 <li>
-                <AnchorLink offset={"70px"}  id="nav-link" className="nav-link about"  href="#about"><a href="">About</a></AnchorLink>
+                <Link offset={"70px"} className="nav-link about"  href="#about">About</Link>
                 </li >
                 <li >
-                <AnchorLink offset={"70px"}  id="nav-link" className="nav-link skills" href="#skills" ><a href="">Skills</a></AnchorLink>
+                <Link offset={"70px"}  className="nav-link skills" href="#skills" >Skills</Link>
                 </li>
                 
                 <li >
-                <AnchorLink offset={"70px"}  id="nav-link" className="nav-link projects" href="#projects" ><a href="">Projects</a></AnchorLink>
+                <Link offset={"70px"}  className="nav-link projects" href="#projects" >Projects</Link>
                 </li>
                 
                 <li  >
-                <AnchorLink offset={"70px"}  id="nav-link" href="#contact" ><a href="" className="nav-link contact">Contact</a></AnchorLink>
+                <Link offset={"70px"} className="nav-link contact"  href="#contact" >Contact</Link>
                 </li>
                
                <Link id="resume-button-1"  onClick={handleResume}>

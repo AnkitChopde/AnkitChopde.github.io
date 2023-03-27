@@ -3,11 +3,19 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 
-import { ChakraProvider } from '@chakra-ui/react';
+import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 import {BrowserRouter} from "react-router-dom"
+
+const config = {
+   initialColorMode: "dark",
+   useSystemColorMode: false,
+ };
+ 
+ const theme = extendTheme({ config });
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
- <ChakraProvider>
+ <ChakraProvider theme={theme}>
     <BrowserRouter>
        <App />
     </BrowserRouter>
