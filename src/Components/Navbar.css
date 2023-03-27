@@ -12,29 +12,26 @@ nav{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
 
-#nav-menu{
+#nav-menu1{
     display:flex;
     justify-content:center;
     align-items:center;
 }
 
-#nav-menu #link{
+#nav-menu1 #link{
     list-style:none;
     padding:0px 20px;
     position:relative;
 }
-#nav-menu #link {
+#nav-menu1 #link {
     font-size:1.3rem;
     font-family:Roboto, sans-serif;
     font-weight:600;
     transition: 0.4s ease-in-out;
 }
-.resume:hover::after{
-    content:"";
-    position:absolute;
-}
 
-#nav-menu #link:hover{
+
+#nav-menu1 #link:hover{
     color:#E11D48;   
 }
 
@@ -49,7 +46,7 @@ nav{
 }
 
 @media screen and (max-width:769px){
-    #nav-menu{
+    #nav-menu1{
         display:flex;
         justify-content:flex-start;
         align-items:flex-start;
@@ -63,10 +60,10 @@ nav{
         padding: 40px 0 0 10px;
         transition:0.5s ease-in-out
     }
-    #nav-menu.active{
+    #nav-menu1.active{
         right:0px;
     }
-    #nav-menu #link{
+    #nav-menu1 #link{
         margin-bottom:25px;
 
     }

@@ -32,8 +32,8 @@ const Navbar = () => {
       })
   }
   return (
-    <div >
-        <Box id="nav-menu">
+    <div id="nav-menu">
+        <Box >
             
             <nav>
             <div style={{display:"flex",alignItems:"center",gap:"10px"}}>
@@ -43,32 +43,32 @@ const Navbar = () => {
             <h1 style={{color:"#17cf97",}}>PORT<span style={{color:"#E11D48",fontWeight:"bold"}}>FOLIO</span></h1>
             </div>
             <div style={{display:"flex"}}>
-            <div id="nav-menu" onClick={()=>setClicked(!clicked)}
-                className={clicked?"#nav-menu active":"#nav-menu"} >
+            <div id="nav-menu1" onClick={()=>setClicked(!clicked)}
+                className={clicked?"#nav-menu1 active":"#nav-menu1"} >
                 
 
-                   <Link id="link" className="nav-link home"  href="#home"> 
+                   <Link className="nav-link home" id="link"   offset={"70px"} href="#home"> 
                 Home
                 </Link>
                 
                 
                 
-                <Link id="link"  className="nav-link about"  href="#about">About</Link>
+                <Link className="nav-link about" id="link" offset={"70px"}  href="#about">About</Link>
                 
                 
-                <Link id="link"  className="nav-link skills" href="#skills" >Skills</Link>
-                
-                
-                
-                <Link id="link"  className="nav-link projects" href="#projects" >Projects</Link>
+                <Link className="nav-link skills" id="link" offset={"70px"}  href="#skills" >Skills</Link>
                 
                 
                 
-                <Link id="link"  className="nav-link contact"  href="#contact" >Contact</Link>
+                <Link className="nav-link projects" id="link" offset={"70px"} href="#projects" >Projects</Link>
+                
+                
+                
+                <Link className="nav-link contact"  id="link" offset={"70px"}  href="#contact" >Contact</Link>
                 
                
-               <Link  id="resume-button-1" >
-               <Text id="link" className="nav-link resume" onClick={onButtonClick}>
+               <Link id="resume-button-1"  >
+               <Text id="li" className="nav-link resume" onClick={onButtonClick}>
                 Resume
                 </Text>
                </Link>

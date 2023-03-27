@@ -39,7 +39,7 @@ const moveGithub = ()=>{
   window.open("https://github.com/AnkitChopde")
 }
   return (
-        <Container justifyContent="center" id="contact" bg="#152242" maxW="full" pt="8" mt={0} centerContent >
+        <Container justifyContent="center" id="contact" bg="#152242" maxW="full" pt="80px" mt={0}  centerContent >
            <Heading  className={styles.heading}>Contact Me</Heading>
           <Flex>
             <Box

@@ -22,7 +22,7 @@ const Skills = () => {
     <div id="skills" style={{backgroundColor:"#152242"}}>
 
       <Box   p="30px" w={{base:"90%",md:"95%",lg:"75%"}} margin="auto" >
-        <Heading className={styles.Heading}>Technical Skills</Heading>
+        <Heading mt="10" className={styles.Heading}>Technical Skills</Heading>
         <Box margin="auto">
         <Flex mt="10" flexWrap={"wrap"} justifyContent="center"
               

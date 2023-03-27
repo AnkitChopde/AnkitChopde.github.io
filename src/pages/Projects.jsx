@@ -52,8 +52,8 @@ const Projects = () => {
     }
   ]
   return (
-    <div id="projects" style={{backgroundColor:"#152242",padding:"30px",height:"max-content"}}>
-       <Heading mt="4" mb="6" className={styles.heading}>My Creative Projects</Heading>
+    <div id="projects" m style={{backgroundColor:"#152242",padding:"30px",height:"max-content"}}>
+       <Heading mt="10" mb="6" className={styles.heading}>My Creative Projects</Heading>
        <Flex flexWrap={"wrap"} justifyContent="center"
               
               gap={7}

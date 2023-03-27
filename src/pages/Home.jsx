@@ -11,7 +11,7 @@ import {ScrollToTop} from '../Components/ScrollToTop';
 
 const Home = () => {
   return (
-    <div bgColor="#0f172a" color="white" h="3000px" >
+    <div bgcolor="#0f172a" color="white" h="3000px" >
       <ProfileSection/>
       <About/>
       <Skills/>
