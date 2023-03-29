@@ -43,7 +43,7 @@ nav{
 }
 #li{
     border:2px solid #E11D48;
-    padding:0.3rem 1rem;
+    padding:5px 16px;
     border-radius:2rem;
 }
 
@@ -54,7 +54,7 @@ nav{
     display:none;
 }
 
-@media screen and (max-width:769px){
+@media screen and (max-width:865px){
     #nav-menu1{
         display:flex;
         justify-content:flex-start;
