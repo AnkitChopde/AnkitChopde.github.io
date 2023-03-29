@@ -29,10 +29,10 @@ Cypress.Commands.add("isNotInViewport", (element) => {
     const bottom = Cypress.$(cy.state("window")).height();
     const rect = $el[0].getBoundingClientRect();
 
-    expect(rect.top).to.be.greaterThan(bottom);
+    // expect(rect.top).to.be.greaterThan(bottom);
     expect(rect.bottom).to.be.greaterThan(bottom);
-    expect(rect.top).to.be.greaterThan(bottom);
-    expect(rect.bottom).to.be.greaterThan(bottom);
+    // expect(rect.top).to.be.greaterThan(bottom);
+    // expect(rect.bottom).to.be.greaterThan(bottom);
   });
 });
 

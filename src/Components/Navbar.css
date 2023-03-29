@@ -18,12 +18,12 @@ nav{
     align-items:center;
 }
 
-#nav-menu1 #link{
+#nav-menu1 li{
     list-style:none;
     padding:0px 20px;
     position:relative;
 }
-#nav-menu1 #link {
+#nav-menu1 li {
     font-size:1.3rem;
     font-family:Roboto, sans-serif;
     font-weight:600;
@@ -31,8 +31,9 @@ nav{
 }
 
 
-#nav-menu1 #link:hover{
-    color:#E11D48;   
+#nav-menu1 li:hover{
+    color:#E11D48; 
+    text-decoration:underline;  
 }
 
 #mobile i{
@@ -40,7 +41,15 @@ nav{
     align-items:center;
 
 }
+#li{
+    border:2px solid #E11D48;
+    padding:0.3rem 1rem;
+    border-radius:2rem;
+}
 
+#li:hover{
+    text-decoration:none
+}
 #mobile{
     display:none;
 }
@@ -63,7 +72,7 @@ nav{
     #nav-menu1.active{
         right:0px;
     }
-    #nav-menu1 #link{
+    #nav-menu1 li{
         margin-bottom:25px;
 
     }

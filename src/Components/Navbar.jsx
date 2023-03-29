@@ -43,35 +43,42 @@ const Navbar = () => {
             <h1 style={{color:"#17cf97",}}>PORT<span style={{color:"#E11D48",fontWeight:"bold"}}>FOLIO</span></h1>
             </div>
             <div style={{display:"flex"}}>
-            <div id="nav-menu1" onClick={()=>setClicked(!clicked)}
-                className={clicked?"#nav-menu1 active":"#nav-menu1"} >
-                
-
-                   <Link className="nav-link home" id="link"   offset={"70px"} href="#home"> 
+            <div>
+        <ul id="nav-menu1" onClick={()=>setClicked(!clicked)}
+                className={clicked?"#nav-menu1 active":"#nav-menu1"}
+          >
+            <li>
+              <a href="#home" className="nav-link home">
                 Home
-                </Link>
-                
-                
-                
-                <Link className="nav-link about" id="link" offset={"70px"}  href="#about">About</Link>
-                
-                
-                <Link className="nav-link skills" id="link" offset={"70px"}  href="#skills" >Skills</Link>
-                
-                
-                
-                <Link className="nav-link projects" id="link" offset={"70px"} href="#projects" >Projects</Link>
-                
-                
-                
-                <Link className="nav-link contact"  id="link" offset={"70px"}  href="#contact" >Contact</Link>
-                
-               
-               <Link id="resume-button-1"  >
+              </a>
+            </li>
+            <li>
+              <a href="#about" className="nav-link about">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#skills" className="nav-link skills">
+                Skills
+              </a>
+            </li>
+            <li>
+              <a href="#projects" className="nav-link projects">
+                Projects
+              </a>
+            </li>
+            <li>
+              <a href="#contact" className="nav-link contact">
+                Contact
+              </a>
+            </li>
+                             
+               <li id="resume-button-1" >
                <Text id="li" className="nav-link resume" onClick={onButtonClick}>
                 Resume
                 </Text>
-               </Link>
+               </li>
+            </ul>
                 
             </div>
             <div id="mobile" >
