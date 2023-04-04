@@ -19,21 +19,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import myResume from '../Assets/Ankesh_Chopde_Resume.pdf'
 
 const ProfileSection = () => {
-  const onButtonClick = () => {
-    // using Java Script method to get PDF file
-    window.open("https://drive.google.com/file/d/1hgRxgDKguwd78F2AQVfwzSx7DBm-3K8M/view?usp=share_link")
-    fetch('Ankesh_Chopde_Resume.pdf').then(response => {
-        response.blob().then(blob => {
-            // Creating new object of PDF file
-            const fileURL = window.URL.createObjectURL(blob);
-         
-            let alink = document.createElement('a');
-            alink.href = fileURL;
-            alink.download = 'Ankesh_Chopde_Resume.pdf';
-            alink.click();
-        })
-    })
-}
+
   return (
     <div id="home" style={{ backgroundColor: "#152242" }}>
       <Container maxW={"7xl"}>

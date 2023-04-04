@@ -41,13 +41,13 @@ nav{
     align-items:center;
 
 }
-#li{
+#resume-link-1{
     border:2px solid #E11D48;
     padding:5px 16px;
     border-radius:2rem;
 }
 
-#li:hover{
+#resume-link-1:hover{
     text-decoration:none
 }
 #mobile{

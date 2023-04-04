@@ -4,7 +4,7 @@ import "./Navbar.css"
 import axios from 'axios'
 import fileDownload from 'js-file-download'
 import AnchorLink from "react-anchor-link-smooth-scroll";
-
+import myResume from '../Assets/Ankesh_Chopde_Resume.pdf'
 import Home from '../pages/Home';
 import About from '../pages/About';
 import Skills from '../pages/Skills';
@@ -16,24 +16,6 @@ const Navbar = () => {
 
     const [clicked,setClicked] = useState(false);
 
-    
-    const onButtonClick = () => {
-      // using Java Script method to get PDF file
-      window.open("https://drive.google.com/file/d/1PAY1qRrrWUrlHizCOTqSFsV9kZOt7EXA/view")
-      fetch('Ankesh_Chopde_Resume.pdf').then(response => {
-          response.blob().then(blob => {
-              // Creating new object of PDF file
-              console.log(blob)
-              const fileURL = window.URL.createObjectURL(blob);
-           
-              let alink = document.createElement('a');
-              alink.href = fileURL;
-              alink.download = 'Ankesh_Chopde_Resume.pdf';
-              alink.click();
-          })
-      })
-  }
-  
   const activestyles = {
     
 }
@@ -81,10 +63,20 @@ const Navbar = () => {
               </a>
             </li>
                              
-               <li id="resume-button-1" >
-               <Text id="li" className="nav-link resume" onClick={onButtonClick}>
+               <li id="resume-button-1" onClick={() => {
+                  window.open(
+                    "https://drive.google.com/file/d/1PAY1qRrrWUrlHizCOTqSFsV9kZOt7EXA/view",
+                    "_blank"
+                  );
+                }}>
+               <a id="resume-link-1" href={
+                  myResume
+                  }
+                  target="_blank"
+                  download="Ankesh_Chopde_Resume.pdf" 
+                  className="nav-link resume" >
                 Resume
-                </Text>
+                </a>
                </li>
             </ul>
                 
