@@ -8,74 +8,71 @@ import {
   Box,
   Heading,
   Text,
-  Button,
+ 
   Image,
-  Icon,
-  IconButton,
-  createIcon,
-  IconProps,
-  useColorModeValue,
+
   Link,
-  useToast,
+  Button,
+
 } from '@chakra-ui/react';
 import AnchorLink from "react-anchor-link-smooth-scroll";
-
+import myResume from '../Assets/Ankesh_Chopde_Resume.pdf'
 
 const ProfileSection = () => {
- const toast = useToast();
-  const handleResume = ()=>{
-    window.open("https://drive.google.com/file/d/1hgRxgDKguwd78F2AQVfwzSx7DBm-3K8M/view?usp=share_link")
-  }
-
   const onButtonClick = () => {
     // using Java Script method to get PDF file
+    window.open("https://drive.google.com/file/d/1hgRxgDKguwd78F2AQVfwzSx7DBm-3K8M/view?usp=share_link")
     fetch('Ankesh_Chopde_Resume.pdf').then(response => {
         response.blob().then(blob => {
             // Creating new object of PDF file
             const fileURL = window.URL.createObjectURL(blob);
-            // Setting various property values
+         
             let alink = document.createElement('a');
             alink.href = fileURL;
             alink.download = 'Ankesh_Chopde_Resume.pdf';
             alink.click();
-
         })
     })
 }
-
   return (
-       <div id="home" style={{backgroundColor:"#152242"}}>
-         <Container maxW={'7xl'}>
-          <Stack
-            
-            pl={{lg:"10"}}
-            spacing={{ base: 4, md: 6 }}
-            py={{ base: 16, md: 24 }}
-            textAlign={{base:"center",md:"center",lg:"left"}}
-            direction={{ base: 'column', md: 'row' }}>
-            <Stack mt={{lg:"7"}} flex={1}  spacing={{ base: 5, md: 10 }}>
-              <Heading
-                lineHeight={1.4}
-                fontWeight={600}
-                fontSize={{ base: 'xl', sm: '2xl', lg: '3xl' }}>
-                <Text
-                  id="user-detail-name"
-                  as={'span'}
-                  color="#ffffff"
-                  >
-                  Hi, I am Ankesh Chopde
-                </Text>
-                <br />
-                <Text as={'span'} fontSize={{ base: '2xl', sm: '3xl', lg: '4xl' }} color={'red.400'}>
-                 Full Stack Web Developer
-                </Text>
-              </Heading>
-              <Text color={'gray.500'} fontSize="lg" id="user-detail-intro">
-              An enthusiastic web developer with strong technical as well as interpersonal skills and expertise in MERN (Proficient in MongoDB, ExpressJS, ReactJS, HTML, CSS, JavaScript, NodeJS) stack.
+    <div id="home" style={{ backgroundColor: "#152242" }}>
+      <Container maxW={"7xl"}>
+        <Stack
+          pl={{ lg: "10" }}
+          spacing={{ base: 4, md: 6 }}
+          py={{ base: 16, md: 24 }}
+          textAlign={{ base: "center", md: "center", lg: "left" }}
+          direction={{ base: "column", md: "row" }}
+        >
+          <Stack mt={{ lg: "7" }} flex={1} spacing={{ base: 5, md: 10 }}>
+            <Heading
+              lineHeight={1.4}
+              fontWeight={600}
+              fontSize={{ base: "xl", sm: "2xl", lg: "3xl" }}
+            >
+              <Text id="user-detail-name" as={"span"} color="#ffffff">
+                Hi, I am Ankesh Chopde
               </Text>
-              <Stack spacing={6} direction={'row'} justifyContent={{base:"center",md:"center",lg:"left"}}  >
-          <Link _hover={{textDecoration:"none"}} onClick={handleResume} download='pdf'>
-          {/* <Button 
+              <br />
+              <Text
+                as={"span"}
+                fontSize={{ base: "2xl", sm: "3xl", lg: "4xl" }}
+                color={"red.400"}
+              >
+                Full Stack Web Developer
+              </Text>
+            </Heading>
+            <Text color={"gray.500"} fontSize="lg" id="user-detail-intro">
+              An enthusiastic web developer with strong technical as well as
+              interpersonal skills and expertise in MERN (Proficient in MongoDB,
+              ExpressJS, ReactJS, HTML, CSS, JavaScript, NodeJS) stack.
+            </Text>
+            <Stack
+              spacing={6}
+              direction={"row"}
+              justifyContent={{ base: "center", md: "center", lg: "left" }}
+            >
+              {/* <Button 
             rounded={'full'}
             onClick={onButtonClick}
             px={6}
@@ -86,59 +83,73 @@ const ProfileSection = () => {
             _hover={{ bg: '#E11D48',border:"2px solid white" }}>
             Resume
           </Button> */}
-          <Box id="resume-button-2" rounded={'full'}
-            onClick={onButtonClick}
-           bg="#152242"
-           color="#ffffff"
-           border="2px solid #E11D48"
-            _hover={{ bg: '#E11D48',border:"2px solid white" }}
-             p="5px 25px" >Resume</Box>
-          </Link>
+              <Button
+                id="resume-button-2"
+                rounded={"full"}
+                onClick={() => {
+                  window.open(
+                    "https://drive.google.com/file/d/1PAY1qRrrWUrlHizCOTqSFsV9kZOt7EXA/view",
+                    "_blank"
+                  );
+                }}
+               
+                bg="#152242"
+                color="#ffffff"
+                border="2px solid #E11D48"
+                _hover={{ bg: "#E11D48", border: "2px solid white" }}
+                p="5px 25px"
+              >
+                <a
+                  href={
+                  myResume
+                  }
+                  id="resume-link-2"
+                  target="_blank"
+                  download="Ankesh_Chopde_Resume.pdf"
+                >
+                  Resume
+                </a>
+              </Button>
 
-          
-          {/* <Button rounded={'full'}  bg="#152242"
+              {/* <Button rounded={'full'}  bg="#152242"
            color="#ffffff"
            border="2px solid #E11D48"
             _hover={{ bg: '#E11D48',border:"2px solid white" }} px={6}>
             <AnchorLink offset={"40px"}  href="#contact">Hire me</AnchorLink>
           </Button> */}
-          <Box rounded={'full'}  bg="#152242"
-           color="#ffffff"
-           border="2px solid #E11D48"
-            _hover={{ bg: '#E11D48',border:"2px solid white" }} p="5px 25px" ><AnchorLink offset={"40px"}  href="#contact">Hire me</AnchorLink></Box>
-        </Stack>
-            </Stack>
-            
-            <Flex
-              flex={1}
-              justify={'center'}
-              align={'center'}
-             
-              w={'full'}>
               <Box
-                
-                height={'300px'}
-                rounded={'2xl'}
-               
-                width={'max-content'}
-               >
-                <Image
-                  alt={'Hero Image'}
-                  className="home-img"
-                  align={'center'}
-                  borderRadius="30PX 50PX 40PX 20PX"
-                  border="5px solid #E11D48"
-                  w={'100%'}
-                  h={'100%'}
-                  src={
-                    logo
-                  }
-                />
+                rounded={"full"}
+                bg="#152242"
+                color="#ffffff"
+                border="2px solid #E11D48"
+                _hover={{ bg: "#E11D48", border: "2px solid white" }}
+                p="5px 25px"
+              >
+                <AnchorLink offset={"40px"} href="#contact">
+                  Hire me
+                </AnchorLink>
               </Box>
-            </Flex>
+            </Stack>
           </Stack>
-        </Container>
-       </div>
-      );
+
+          <Flex flex={1} justify={"center"} align={"center"} w={"full"}>
+            <Box height={"300px"} rounded={"2xl"} width={"max-content"}>
+              <Image
+                alt={"Hero Image"}
+                objectFit={"cover"}
+                className="home-img"
+                align={"center"}
+                borderRadius="30PX 50PX 40PX 20PX"
+                border="5px solid #E11D48"
+                w={"100%"}
+                h={"100%"}
+                src={logo}
+              />
+            </Box>
+          </Flex>
+        </Stack>
+      </Container>
+    </div>
+  );
     }
 export default ProfileSection

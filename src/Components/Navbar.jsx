@@ -11,6 +11,7 @@ import Skills from '../pages/Skills';
 import Projects from '../pages/Projects';
 import Stats from '../pages/Stats';
 import Contact from '../pages/Contact';
+import { NavLink } from 'react-router-dom'
 const Navbar = () => {
 
     const [clicked,setClicked] = useState(false);
@@ -18,10 +19,11 @@ const Navbar = () => {
     
     const onButtonClick = () => {
       // using Java Script method to get PDF file
-      window.open("https://drive.google.com/file/d/1hgRxgDKguwd78F2AQVfwzSx7DBm-3K8M/view?usp=share_link")
+      window.open("https://drive.google.com/file/d/1PAY1qRrrWUrlHizCOTqSFsV9kZOt7EXA/view")
       fetch('Ankesh_Chopde_Resume.pdf').then(response => {
           response.blob().then(blob => {
               // Creating new object of PDF file
+              console.log(blob)
               const fileURL = window.URL.createObjectURL(blob);
            
               let alink = document.createElement('a');
@@ -31,6 +33,10 @@ const Navbar = () => {
           })
       })
   }
+  
+  const activestyles = {
+    
+}
   return (
     <div >
         <Box >
@@ -47,11 +53,13 @@ const Navbar = () => {
         <ul id="nav-menu1" onClick={()=>setClicked(!clicked)}
                 className={clicked?"#nav-menu1 active":"#nav-menu1"}
           >
+            <NavLink to="#home"className={({ isActive }) =>  isActive ? " active" : ""}>
             <li>
               <a href="#home" className="nav-link home">
                 Home
               </a>
             </li>
+            </NavLink>
             <li>
               <a href="#about" className="nav-link about">
                 About
