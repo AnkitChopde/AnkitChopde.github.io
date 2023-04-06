@@ -74,7 +74,7 @@ const ProfileSection = () => {
                 rounded={"full"}
                 onClick={() => {
                   window.open(
-                    "https://drive.google.com/file/d/1PAY1qRrrWUrlHizCOTqSFsV9kZOt7EXA/view",
+                    "https://drive.google.com/file/d/1vaYdVnJgMrSfB4ngOJie1upX7XsR88GG/view",
                     "_blank"
                   );
                 }}
@@ -92,6 +92,7 @@ const ProfileSection = () => {
                   id="resume-link-2"
                   target="_blank"
                   download="Ankesh_Chopde_Resume.pdf"
+                  rel="noreferrer"
                 >
                   Resume
                 </a>

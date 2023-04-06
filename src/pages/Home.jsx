@@ -18,7 +18,7 @@ const Home = () => {
       <Projects/>
       <Stats/>
       <Contact/>
-      <ScrollToTop/>
+      {/* <ScrollToTop/> */}
       {/* <Projects/> */}
       {/* <Contact/> */}
     </div>
